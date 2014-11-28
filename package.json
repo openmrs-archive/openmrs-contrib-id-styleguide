@@ -1,0 +1,19 @@
+{
+  "name": "openmrs-contrib-id-styleguide",
+  "version": "0.0.1",
+  "description": "Design style guide for OpenMRS ID",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elliottwilliams/openmrs-contrib-id-styleguide/"
+  },
+  "keywords": [
+    "openmrs",
+    "openmrs-id"
+  ],
+  "author": "Elliott Williams <elliott@openmrs.org>",
+  "license": "MPLv2"
+}
