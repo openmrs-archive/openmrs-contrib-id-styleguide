@@ -7,24 +7,167 @@
 
 <h1>OpenMRS ID Style Guide</h1>
 
-<h2>Basic panel</h2>
-<div class="panel panel-default">
+<h2>1. Basic panels</h2>
+  <p>Place content that should be grouped and boxed in, within a basic panel:</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
   <div class="panel-body">
-    Basic panel example
+    
   </div>
 </div>
+      </div>
+</div>
+<h4>Source code:</h4>
+<pre><code class="html">&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+    &lt;div class="panel panel-default"&gt;
+      &lt;div class="panel-body"&gt;
 
-<h4>Source code:</h3>
-<pre><code class="html">&lt;div class="panel panel-default"&gt;
-  &lt;div class="panel-body"&gt;
-    Basic panel example
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+<hr>
 
-<h2>Email selector example:</h2>
+
+<h2>2. Headings</h2>
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. h1 should be reserved for page headings. h5 and h6 will most likely not need used.</p>
 <div class="row">
-<ul class="email-selector list-group col-md-8">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+  <div class="panel-body">
+    <h1>h1. Heading</h1>
+<h2>h2. Heading</h2>
+<h3>h3. Heading</h3>
+<h4>h4. Heading</h4>
+<h5>h5. Heading</h5>
+<h6>h6. Heading</h6>
+  </div>
+</div>
+      </div>
+</div>
+<h4>Source code:</h4>
+<pre><code class="html">&lt;h1&gt;h1. Heading&lt;/h1&gt;
+&lt;h2&gt;h2. Heading&lt;/h2&gt;
+&lt;h3&gt;h3. Heading&lt;/h3&gt;
+&lt;h4&gt;h4. Heading&lt;/h4&gt;
+&lt;h5&gt;h5. Heading&lt;/h5&gt;
+&lt;h6&gt;h6. Heading&lt;/h6&gt;
+</code></pre>
+<hr>
 
+
+
+<h2>3. Body copy</h2>
+<p>Basic body copy should simply be contained within paragraph tags:</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>This is a sample paragraph.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<h4>Source code:</h4>
+<pre><code class="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+</code></pre>
+<hr>
+
+
+<h2>4. Lead body copy</h2>
+<p>Make a paragraph stand out from other standard paragraphs by adding <code>.lead</code>:</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p class="lead">This is a sample paragraph.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<h4>Source code:</h4>
+<pre><code class="html">&lt;p class="lead"&gt;This is a sample paragraph.&lt;/p&gt;
+</code></pre>
+<hr>
+
+
+
+<h2>5. Buttons</h2>
+  <p>The primary call to action on a page should be a button:</p>
+<div class="row">
+  <div class="col-md-12">
+    <button type="button" class="btn btn-primary">Primary Call to Action</button>
+  </div>
+</div>
+<h4>Source code:</h4>
+<pre><code class="html">&lt;div class="row"&gt;
+  &lt;div class="col-md-12"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Primary Call to Action
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<hr>
+
+
+
+<h2>6. Forms</h2>
+<p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      <form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+<h4>Source code:</h4>
+<pre><code class="html">&lt;form class="form-horizontal" role="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputEmail3" class="col-sm-2 control-label">Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputPassword3" class="col-sm-2 control-label">Password&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+      &lt;button type="submit" class="btn btn-primary">Sign in&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+<hr>
+
+
+<h2>7. Email selectors</h2>
+<div class="row">
+  <div class="col-md-12">
+    <ul class="email-selector list-group col-md-12">
     <li class="list-group-item">
 
       <h4 class="list-group-item-heading">
@@ -51,13 +194,14 @@
       </a>
 
     </li>
-
-</ul>
+    </ul>
+    </div>
 </div>
 
-<h4>Source code</h3>
+<h4>Source code</h4>
 <pre><code class="html">&lt;div class="row"&gt;
-&lt;ul class="email-selector list-group col-md-8"&gt;
+&lt;div class="col-md-12"&gt;
+&lt;ul class="email-selector list-group col-md-12"&gt;
 
     &lt;li class="list-group-item"&gt;
 
@@ -87,4 +231,6 @@
     &lt;/li&gt;
 
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+<hr>
